@@ -37,7 +37,7 @@ RESET='\e[0m'
 echo -e "${GREEN}Welcome to Chromebrew!${RESET}\n"
 if [ "${EUID}" == "0" ]; then
   echo -e "${RED}Chromebrew should not be installed or run as root.${RESET}"
-  exit 1;
+  ;
 fi
 
 case "${ARCH}" in
